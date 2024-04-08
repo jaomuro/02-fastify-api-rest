@@ -1,0 +1,23 @@
+{
+  "name": "02-fastify-api-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src -c .ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^20.12.5",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "fastify": "^4.26.2"
+  }
+}
