@@ -5,6 +5,10 @@ import { knex } from "../database";
 import { checkSessionIdExists } from "../midlewares/checkSessionIdExists";
 
 export async function transactionsRoutes(app: FastifyInstance) {
+  app.addHook("preHandler", async (req, res) => {
+    console.log(`[${req.method}] ${req.url}`);
+  }); // preHandler Global funcionará para todas as rotas do contexto deste plugin que trata as rotas de transação e apenas para esse módulo.
+
   app.get(
     "/",
     {
