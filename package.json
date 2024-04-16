@@ -7,7 +7,7 @@
   "scripts": {
     "test": "vitest",
     "dev": "tsx watch src/server.ts",
-    "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
+    "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
     "lint": "eslint src -c .ts",
     "build": "tsup src --out-dir build"
   },
